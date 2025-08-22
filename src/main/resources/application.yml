@@ -1,0 +1,97 @@
+url:
+  omie:
+    endpoint: "https://app.omie.com.br/api/v1/geral/clientes/"
+    call: "ListarClientes"
+    app_key: "316403016930"
+    app_secret: "a03b094aa34becddac4e4b537c0d3915"
+
+chaves-paghiper:
+  apiKey: "apk_40415168-OTLlzWpGtUaUmsOGemjvGgPLBdjZWHbk"
+  token: "TN1J41F8TSQQBLL1G8DU13M3VVMWADS31UN5V2EPV5G7"
+  notificacao: "https://api.paghiper.com/transaction/notification/"
+
+chaves-detran:
+  id: "278653"
+  key: "8ae6dfe8babd74c2f6332d28613ae420"
+
+chaves-detran-pr-hml:
+  id: "312"
+  key: "9a6706c75b18069af06a3ca5fe0ca76b"
+
+email:
+  comercial: "angelica.cunha@tecnodatacfc.com.br"
+  remetente: "reciclagem@tecnodataead.com.br"
+
+emissao-boleto:
+  endpoint-emissao: "https://api.paghiper.com/transaction/create/"
+  endpoint-consulta: "https://api.paghiper.com/transaction/status/"
+
+emissao-pix:
+  endpoint-emissao: "https://pix.paghiper.com/invoice/create/"
+
+emissao-cartao:
+  token: "07f71e45a2f84ee9be3a550480fa70c5"
+  filiation: "75579235"
+  #  url: "https://sandbox-erede.useredecloud.com.br/v1/"
+  url: "https://api.userede.com.br/erede/v1/"
+
+
+detran:
+  #  endpoint-validacao-facial: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/biometria/validar/face/v2"
+  #  endpoint-cfc: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/vinculos/cfc/{numCnpj}"
+  #  endpoint-cfcs: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/vinculos/cfcs"
+  #  endpoint-consultar-turma: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/turmas/{codCfc}/{dataPesquisa}"
+  #  endpoint-agendamento: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/agendamentos/cfc/{codCfc}/{dataPesquisa}"
+  #  endpoint-processo-instrutor: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/instrutor/{numCpf}"
+  #  endpoint-consultar-aluno: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/aluno/{numProcesso}"
+  #  endpoint-processo-turma: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/agendamentos/cfc/turma/{codTurmaCfc}/{codCfc}/{horaInicio}/{dataPesquisa}"
+  #  endpoint-agendamentos-processo: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/agendamentos/{numProcesso}/{dataPesquisa}"
+  endpoint-detran-prod: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/vinculos/cfc/{numCnpj}"
+  endpoint-validacao-facial: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/biometria/validar/face/v2"
+  endpoint-processo-turma: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/agendamentos/cfc/turma/{codTurmaCfc}/{codCfc}/{horaInicio}/{dataPesquisa}"
+  endpoint-consultar-aluno: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/aluno/{numProcesso}"
+  endpoint-processo-instrutor: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/instrutor/{numCpf}"
+  endpoint-cfcs: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/vinculos/cfcs"
+  endpoint-cfc: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/vinculos/cfc/{numCnpj}"
+  endpoint-agendamento: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/agendamentos/cfc/{codCfc}/{dataPesquisa}"
+  endpoint-agendamentos-processo: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/agendamentos/{numProcesso}/{dataPesquisa}"
+  endpoint-consultar-turma: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/consulta/ead/teorico/turmas/{codCfc}/{dataPesquisa}"
+  extracao-curso: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/ead/especializados/listarCursosDisponiveis"
+  verificar-aluno-reciclagem: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/reciclagem/ead/certificado/verificar/{numRegCnh}/{numCpf}/{dataNascimento}"
+  certificar-aluno-reciclagem: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/reciclagem/ead/certificado/cadastrar"
+  verificar-aluno-cursoespecial: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/ead/especializados/verificar/{numRegCnh}/{numCpf}/{dataNascimento}/{codCurso}"
+  certificar-aluno-cursoespecial: "https://www.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/ead/especializados/cadastrar"
+  # HML
+  #verificar-aluno-cursoespecial: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/ead/especializados/verificar/{numRegCnh}/{numCpf}/{dataNascimento}/{codCurso}"
+  #certificar-aluno-cursoespecial: "http://homolog.wsutils.detran.pr.gov.br/detran-wsutils/rest/servico/ead/especializados/cadastrar"
+detran-sc:
+  ambiente-hml: "https://dev.apim.ciasc.sc.gov.br:8243/credenciamento-api"
+  ambiente-prod: "https://apim.ciasc.sc.gov.br:8243/credenciamento-api"
+  token-hml: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5UZG1aak00WkRrM05qWTBZemM1TW1abU9EZ3dNVEUzTVdZd05ERTVNV1JsWkRnNE56YzRaQT09In0.eyJhdWQiOiJodHRwOlwvXC9vcmcud3NvMi5hcGltZ3RcL2dhdGV3YXkiLCJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJhcHBsaWNhdGlvbiI6eyJvd25lciI6ImFkbWluIiwidGllclF1b3RhVHlwZSI6InJlcXVlc3RDb3VudCIsInRpZXIiOiJVbmxpbWl0ZWQiLCJuYW1lIjoiQXBwLUNyZWRlbmNpYW1lbnRvIiwiaWQiOjY1LCJ1dWlkIjpudWxsfSwic2NvcGUiOiJhbV9hcHBsaWNhdGlvbl9zY29wZSBkZWZhdWx0IiwiaXNzIjoiaHR0cHM6XC9cL2Rldi5hY2Vzc28uY2lhc2Muc2MuZ292LmJyOjQ0M1wvb2F1dGgyXC90b2tlbiIsInRpZXJJbmZvIjp7IlVubGltaXRlZCI6eyJ0aWVyUXVvdGFUeXBlIjoicmVxdWVzdENvdW50Iiwic3RvcE9uUXVvdGFSZWFjaCI6dHJ1ZSwic3Bpa2VBcnJlc3RMaW1pdCI6MCwic3Bpa2VBcnJlc3RVbml0IjpudWxsfX0sImtleXR5cGUiOiJQUk9EVUNUSU9OIiwic3Vic2NyaWJlZEFQSXMiOlt7InN1YnNjcmliZXJUZW5hbnREb21haW4iOiJjYXJib24uc3VwZXIiLCJuYW1lIjoiQ3JlZGVuY2lhbWVudG9BUEkiLCJjb250ZXh0IjoiXC9jcmVkZW5jaWFtZW50by1hcGlcL3YxIiwicHVibGlzaGVyIjoiYWRtaW4iLCJ2ZXJzaW9uIjoidjEiLCJzdWJzY3JpcHRpb25UaWVyIjoiVW5saW1pdGVkIn1dLCJjb25zdW1lcktleSI6ImJKWnVrZGpZTjVrUjZtRFBxczI5R3NaZnVnUWEiLCJleHAiOjM3Nzk4MjcwMTcsImlhdCI6MTYzMjM0MzM3MCwianRpIjoiZTNhZWI0YWQtNGRhZS00ODA5LTljYWItNjdjNzVmMWE5NzM3In0.XzO-2xsLTZW0cYNh15GVZ2e5DeXTWU7TgfeyiMvYnlP_k_21LoXWWB9t00NFKZcHSss_SW7IDaXC1_UHuwFb0wt7AkLdyL4l9ZbRVLiH4Vea2akXJXmbF3LaxMELOCVvrMmmoO0NwFp8OxShxKJFlorIkhTUxkRs9B-ETDdXMVoTE0qARFLXjp0UFEkmlhDiGBc2u84bGEgyH7-CKj3m1M836QnWuP5tigeUEG_MG5qgW4-lN_4NJNGkJ2UmjDEkMNMmIbhWG9WQZ8KF-UCsuK_LAtObeRKMarE8NFPVojHOTWLSrLfGUXzng-o70Tk0zEMX0hVd9bRdP9r0FWOUSA"
+  token-prod: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlltSmhPVEV5TURka01UQmpaREU1Tm1Wak4yVTRPRGs1WVRJM1ptUXlORFJsWTJNeU5UWmlOUT09In0.eyJhdWQiOiJodHRwOlwvXC9vcmcud3NvMi5hcGltZ3RcL2dhdGV3YXkiLCJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJhcHBsaWNhdGlvbiI6eyJvd25lciI6ImFkbWluIiwidGllclF1b3RhVHlwZSI6InJlcXVlc3RDb3VudCIsInRpZXIiOiJVbmxpbWl0ZWQiLCJuYW1lIjoiQXBwLUNyZWRlbmNpYW1lbnRvIiwiaWQiOjc1LCJ1dWlkIjpudWxsfSwic2NvcGUiOiJhbV9hcHBsaWNhdGlvbl9zY29wZSBkZWZhdWx0IiwiaXNzIjoiaHR0cHM6XC9cL2FjZXNzby5jaWFzYy5zYy5nb3YuYnI6NDQzXC9vYXV0aDJcL3Rva2VuIiwidGllckluZm8iOnsiVW5saW1pdGVkIjp7InRpZXJRdW90YVR5cGUiOiJyZXF1ZXN0Q291bnQiLCJzdG9wT25RdW90YVJlYWNoIjp0cnVlLCJzcGlrZUFycmVzdExpbWl0IjowLCJzcGlrZUFycmVzdFVuaXQiOm51bGx9fSwia2V5dHlwZSI6IlBST0RVQ1RJT04iLCJzdWJzY3JpYmVkQVBJcyI6W3sic3Vic2NyaWJlclRlbmFudERvbWFpbiI6ImNhcmJvbi5zdXBlciIsIm5hbWUiOiJDcmVkZW5jaWFtZW50b0FQSSIsImNvbnRleHQiOiJcL2NyZWRlbmNpYW1lbnRvLWFwaVwvMS4wIiwicHVibGlzaGVyIjoiYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wIiwic3Vic2NyaXB0aW9uVGllciI6IlVubGltaXRlZCJ9XSwiY29uc3VtZXJLZXkiOiJrdTdvVHN5Nm9qd0piMWlNdnlpaTIxZ0lOOUlhIiwiZXhwIjoxMDY0MDgwNTM0MiwiaWF0IjoxNjQwODA1MzQyLCJqdGkiOiIxMjViZGY0MC05NWRjLTQ4ZmUtYTdhOC1iNzdmYmZkNjYxMGUifQ.a2_jxFr6v6NWRgosBRjrMC9bBIZwjYQJ0XBqTes0tLRrGjSTFzwyphNh1KtG3d9AGL0ra7G10hjHUVTWWbLH-6qiwGQ4LUUZQCV6n_F_8tLXOQ9SV56DFZcRzmRMirTAIk57L2zWnOul8j4gcmWcXUqTBKNE4U-IOw9tIDzTfVl2qLf71xnVS3fG6Ehi1JLfx6NRPaT6K21Jx3YAVPc0iWLA6htdu4ya6TDT5CilvHrDFmrTGjGcdoa_R-Z38IL1X1B-4S-bLPIbwOHiuAihN5TtNDsG0FXWSQqRGvwbjPFqUmsNG5nAi6Fa1x7ZPccJYyqCwWnkqE8vEt4mT-sy5A"
+  extracao-curso: "https://apim.ciasc.sc.gov.br:8243/credenciamento-api/educacao/ead/extracao-curso"
+  consulta-matricula-curso-especializado: "https://apim.ciasc.sc.gov.br:8243/credenciamento-api/educacao/ead/consulta-matricula-curso-especializado"
+  consulta-matricula-curso-reciclagem: "https://apim.ciasc.sc.gov.br:8243/credenciamento-api/educacao/ead/consulta-matricula-curso-reciclagem"
+  grava-curso-especializado: "https://apim.ciasc.sc.gov.br:8243/credenciamento-api/educacao/ead/grava-curso-especializado"
+  grava-curso-reciclagem: "https://apim.ciasc.sc.gov.br:8243/credenciamento-api/educacao/ead/grava-curso-reciclagem"
+detran-rs:
+  valida-aluno: "https://mgfc.detran.rs.gov.br/gfc/rest/gfcmobile/cursoEAD/validaAluno"
+  certificar-aluno: "https://mgfc.detran.rs.gov.br/gfc/rest/gfcmobile/cursoEAD/incluiCertificadoAluno"
+detran-ms:
+  valida-aluno: "http://www2.detran.ms.gov.br/detranet/ead/consCond/homologacao/consCond.asp"
+  certificar-aluno: "https://mgfc.detran.rs.gov.br/gfc/rest/gfcmobile/cursoEAD/incluiCertificadoAluno"
+
+endereco:
+  cep: "https://viacep.com.br/ws/{cep}/json/"
+
+moodle-auth:
+  username: "user_rest_java"
+  password: "#@Tecno623#"
+  service: "loja_parceiros"
+moodle-rest:
+  token: "https://transito.tecnodataead.com.br/login/token.php"
+  url: "https://transito.tecnodataead.com.br/webservice/rest/server.php"
+  url-login: "https://transito.tecnodataead.com.br/login/index.php?courseid=49%20"
+
+aula-remota:
+  envio-creditos: "https://api.aularemota.tecnodataead.com.br/tecnodata/credits-history"
